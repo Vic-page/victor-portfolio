@@ -3,93 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nova SmartWatch S9</title>
+  <title>Omotosho Victor | Web Designer</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #f5f7fa;
-      color: #222;
+      background: #fdfdfd;
+      color: #333;
     }
     header {
-      background: #1e1f29;
-      color: white;
-      text-align: center;
+      background: #0a192f;
+      color: #fff;
       padding: 60px 20px;
+      text-align: center;
     }
     header h1 {
-      font-size: 2.8rem;
+      font-size: 3rem;
       margin-bottom: 10px;
     }
     header p {
       font-size: 1.2rem;
-      opacity: 0.8;
-    }
-    .hero {
-      text-align: center;
-      padding: 40px 20px;
-    }
-    .hero img {
-      width: 250px;
-      border-radius: 12px;
-      margin-bottom: 20px;
-    }
-    .hero h2 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      max-width: 600px;
-      margin: auto;
-      font-size: 1rem;
     }
 
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 40px 20px;
+    nav {
+      background: #081d3a;
+      padding: 15px;
+      text-align: center;
     }
-    .feature {
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .skills, .projects {
+      background: #f1f1f1;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 40px;
+    }
+    .skills h2, .projects h2 {
+      margin-bottom: 20px;
+      color: #0a192f;
+    }
+    .skill-tags {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .skill-tags span {
+      background: #0a192f;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    .projects-preview {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .project-card {
       background: white;
       padding: 20px;
-      border-left: 5px solid #1e1f29;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      border-left: 5px solid #0a192f;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
-    .feature h3 {
+    .project-card h3 {
       margin-bottom: 10px;
+      color: #333;
+    }
+    .project-card a {
+      color: #0077cc;
+      font-weight: 600;
     }
 
     .cta {
-      background: #e6f0ff;
       text-align: center;
-      padding: 50px 20px;
-    }
-    .cta h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-    .cta p {
-      font-size: 1.1rem;
-      margin-bottom: 20px;
+      padding: 40px;
+      background: #e0f2ff;
+      border-radius: 10px;
     }
     .cta a {
-      padding: 12px 24px;
-      background: #1e1f29;
+      background: #0a192f;
       color: white;
-      text-decoration: none;
-      font-weight: bold;
+      padding: 12px 24px;
       border-radius: 25px;
+      font-weight: bold;
+      text-decoration: none;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background: #1e1f29;
+      font-size: 0.9rem;
+      background: #081d3a;
       color: white;
     }
   </style>
@@ -97,31 +117,46 @@
 <body>
 
   <header>
-    <h1>Nova SmartWatch S9</h1>
-    <p>Style meets technology. Stay connected, healthy, and on time.</p>
+    <h1>Omotosho Victor</h1>
+    <p>Aspiring Front-End Web Designer | Clean UI & Responsive Design</p>
   </header>
 
-  <section class="hero">
-    <img src="https://via.placeholder.com/250x250.png?text=SmartWatch+S9" alt="Nova Smartwatch S9">
-    <h2>Advanced. Sleek. Built for You.</h2>
-    <p>The Nova S9 is your all-in-one smartwatch companion — fitness tracker, message hub, and timepiece in one elegant package.</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <div class="skill-tags">
+      <span>HTML</span>
+      <span>CSS</span>
+    </div>
   </section>
 
-  <section class="features">
-    <div class="feature">
-      <h3>📞 Call & Message Alerts</h3>
-      <p>Get real-time notifications from your phone directly on your wrist.</p>
+  <section class="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-preview">
+      <div class="project-card">
+        <h3>Omotosho Victor Portfolio</h3>
+        <p>A simple and responsive personal webpage showcasing contact details and project highlights.</p>
+        <a href="https://vic-page.github.io/Simple-web/#contact" target="_blank">Live Demo</a>
+      </div>
+
+      <!-- More projects to be added later -->
     </div>
-    <div class="feature">
-      <h3>💓 Heart Rate Monitor</h3>
-      <p>Track your heart rate 24/7 and stay on top of your health goals.</p>
-    </div>
-    <div class="feature">
-      <h3>💧 Water Resistant</h3>
-      <p>Wear it in the rain or during workouts without worry.</p>
-    </div>
-    <div class="feature">
-      <h3>🔋 7-Day Battery</h3>
-      <p>Stay unplugged longer with a powerful battery that lasts all week.</p>
-    </div>
-  </sec
+  </section>
+
+  <section class="cta">
+    <h2>Want to Work With Me?</h2>
+    <p>I'm currently open to freelance or full-time front-end roles.</p>
+    <a href="contact.html">Hire Me</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Omotosho Victor. All rights reserved.
+  </footer>
+
+</body>
+</html>
